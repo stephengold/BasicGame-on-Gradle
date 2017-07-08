@@ -1,0 +1,5 @@
+/.gradle/2.13/
+/.nb-gradle/
+/build/
+/private/
+/*.dll
