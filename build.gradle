@@ -1,0 +1,64 @@
+apply plugin: 'java'
+
+//sourceCompatibility = '1.7'
+sourceCompatibility = '1.8'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation'
+    }
+}
+
+tasks.withType(JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    enableAssertions true
+}
+
+// NetBeans will automatically add "run" and "debug" tasks relying on the
+// "mainClass" property. You may however define the property prior executing
+// tasks by passing a "-PmainClass=<QUALIFIED_CLASS_NAME>" argument.
+//
+// Note however, that you may define your own "run" and "debug" task if you
+// prefer. In this case NetBeans will not add these tasks but you may rely on
+// your own implementation.
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'mygame.Main'
+}
+
+repositories {
+    maven { url 'https://jcenter.bintray.com' }
+    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
+    mavenCentral()
+    // You may define additional repositories, or even remove "mavenCentral()".
+    // Read more about repositories here:
+    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
+}
+
+ext.jmonkeyengineVersion = '3.1.0-stable'
+
+dependencies {
+    // You can read more about how to add dependency here:
+    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
+
+    // from jcenter repositories:
+    compile "org.jmonkeyengine:jme3-core:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-blender:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-bullet:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-bullet-native:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-desktop:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-effects:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-jogg:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-lwjgl:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-plugins:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-terrain:${jmonkeyengineVersion}"
+    // from stephengold's repositories:
+    compile "org.jmonkeyengine:jme3-testdata:${jmonkeyengineVersion}"
+}
+
+clean { dependsOn 'cleanDLLs' }
+
+task cleanDLLs(type: Delete) {
+    delete fileTree(dir: '.', include: '*.dll')
+}
