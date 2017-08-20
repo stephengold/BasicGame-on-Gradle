@@ -1,8 +1,8 @@
 # BasicGame-on-Gradle
 
-jMonkeyEngine's protoypical BasicGame as a Gradle project
+jMonkeyEngine's prototypical BasicGame as a Gradle project
 
-If you want to get start using Gradle with jMonkeyEngine's IDE (or with
+If you want to get started using Gradle with jMonkeyEngine's IDE (or with
 NetBeans) and didn't know where to start, use this project as a template.
 
 You will need the "Gradle Support" plugin.
