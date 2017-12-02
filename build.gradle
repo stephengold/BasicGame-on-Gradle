@@ -7,6 +7,7 @@ sourceCompatibility = '1.8'
 
 gradle.projectsEvaluated {
     tasks.withType(JavaCompile) {
+        // javac options
         options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation'
     }
 }
@@ -29,6 +30,7 @@ if (!hasProperty('mainClass')) {
 
 repositories {
     maven { url 'https://jcenter.bintray.com' }
+    maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
     mavenCentral()
     mavenLocal()
@@ -38,10 +40,11 @@ repositories {
 }
 
 ext.jmonkeyengineVersion = '3.1.0-stable'
+//ext.jmonkeyengineVersion = '3.2.0-alpha1'
 //ext.jmonkeyengineVersion = '[3.2,)'
 
 dependencies {
-    // You can read more about how to add dependency here:
+    // You can read more about how to add dependencies here:
     //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
 
     // from jcenter repositories:
