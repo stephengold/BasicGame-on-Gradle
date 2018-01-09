@@ -3,18 +3,16 @@ apply plugin: 'java'
 //sourceCompatibility = '1.7'
 sourceCompatibility = '1.8'
 
-[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
-
 gradle.projectsEvaluated {
     tasks.withType(JavaCompile) {
-        // javac options
-        options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation'
+        options.compilerArgs << '-Xlint:unchecked'
+        options.deprecation = true
+        options.encoding = 'UTF-8'
     }
-}
-
-tasks.withType(JavaExec) {
-    classpath sourceSets.main.runtimeClasspath
-    enableAssertions true
+    tasks.withType(JavaExec) {
+        classpath sourceSets.main.runtimeClasspath
+        enableAssertions true
+    }
 }
 
 //ext.jmonkeyengineVersion = '3.1.0-stable'
@@ -33,7 +31,7 @@ if (!hasProperty('mainClass')) {
 }
 
 repositories {
-    maven { url 'https://jcenter.bintray.com' }
+    jcenter()
     maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
     mavenCentral()
@@ -60,10 +58,11 @@ dependencies {
     compile "org.jmonkeyengine:jme3-plugins:${jmonkeyengineVersion}"
     compile "org.jmonkeyengine:jme3-terrain:${jmonkeyengineVersion}"
 
-    // from stephengold's repositories:
+    // from stephengold's bintray repositories:
     runtime 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
 }
 
+// cleanup tasks
 clean { dependsOn 'cleanDLLs' }
 task cleanDLLs(type: Delete) {
     delete fileTree(dir: '.', include: '*.dll')
