@@ -41,12 +41,12 @@ repositories {
     mavenLocal()
     // You may define additional repositories, or even remove "mavenCentral()".
     // Read more about repositories here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
+    //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:repositories
 }
 
 dependencies {
     // You can read more about how to add dependencies here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
+    //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
 
     // from jcenter repositories:
     compile "org.jmonkeyengine:jme3-core:${jmonkeyengineVersion}"
