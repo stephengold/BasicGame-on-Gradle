@@ -20,7 +20,7 @@ gradle.projectsEvaluated {
 
 //ext.jmonkeyengineVersion = '3.1.0-stable'
 ext.jmonkeyengineVersion = '3.2.0-stable'
-//ext.jmonkeyengineVersion = '[3.2,)'
+//ext.jmonkeyengineVersion = '3.2.0-SNAPSHOT'
 
 // NetBeans will automatically add "run" and "debug" tasks relying on the
 // "mainClass" property. You may however define the property prior executing
