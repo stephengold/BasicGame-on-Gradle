@@ -22,7 +22,8 @@ gradle.projectsEvaluated {
 
 // select a version of the Engine
 //ext.jmonkeyengineVersion = '3.1.0-stable' // from jcenter
-ext.jmonkeyengineVersion = '3.2.0-stable' // from jcenter
+//ext.jmonkeyengineVersion = '3.2.0-stable' // from jcenter
+ext.jmonkeyengineVersion = '3.2.1-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.2.0-SNAPSHOT' // from mavenLocal
 
 // NetBeans will automatically add "run" and "debug" tasks relying on the
