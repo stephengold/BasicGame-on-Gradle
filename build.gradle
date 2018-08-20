@@ -54,22 +54,22 @@ dependencies {
     //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
 
     // from jcenter (or mavenLocal) repositories:
-    compile "org.jmonkeyengine:jme3-core:${jmonkeyengineVersion}"
-    runtime "org.jmonkeyengine:jme3-blender:${jmonkeyengineVersion}"
-    //compile "org.jmonkeyengine:jme3-bullet:${jmonkeyengineVersion}"
-    //runtime "org.jmonkeyengine:jme3-bullet-native:${jmonkeyengineVersion}"
-    runtime "org.jmonkeyengine:jme3-desktop:${jmonkeyengineVersion}"
-    //compile "org.jmonkeyengine:jme3-effects:${jmonkeyengineVersion}"
-    //runtime "org.jmonkeyengine:jme3-jogg:${jmonkeyengineVersion}"
-    //compile "org.jmonkeyengine:jme3-jogl:${jmonkeyengineVersion}"
-    //compile "org.jmonkeyengine:jme3-networking:${jmonkeyengineVersion}"
-    //compile "org.jmonkeyengine:jme3-niftygui:${jmonkeyengineVersion}"
-    runtime "org.jmonkeyengine:jme3-plugins:${jmonkeyengineVersion}"
-    //compile "org.jmonkeyengine:jme3-terrain:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
+    runtime "org.jmonkeyengine:jme3-blender:$jmonkeyengineVersion"
+    //compile "org.jmonkeyengine:jme3-bullet:$jmonkeyengineVersion"
+    //runtime "org.jmonkeyengine:jme3-bullet-native:$jmonkeyengineVersion"
+    runtime "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
+    //compile "org.jmonkeyengine:jme3-effects:$jmonkeyengineVersion"
+    //runtime "org.jmonkeyengine:jme3-jogg:$jmonkeyengineVersion"
+    //compile "org.jmonkeyengine:jme3-jogl:$jmonkeyengineVersion"
+    //compile "org.jmonkeyengine:jme3-networking:$jmonkeyengineVersion"
+    //compile "org.jmonkeyengine:jme3-niftygui:$jmonkeyengineVersion"
+    runtime "org.jmonkeyengine:jme3-plugins:$jmonkeyengineVersion"
+    //compile "org.jmonkeyengine:jme3-terrain:$jmonkeyengineVersion"
 
     // select a version of LWJGL (from jcenter or mavenLocal)
-    compile "org.jmonkeyengine:jme3-lwjgl:${jmonkeyengineVersion}"
-    //compile "org.jmonkeyengine:jme3-lwjgl3:${jmonkeyengineVersion}"
+    compile "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
+    //compile "org.jmonkeyengine:jme3-lwjgl3:$jmonkeyengineVersion"
 
     // from stephengold's bintray repositories:
     //runtime 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
