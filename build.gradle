@@ -68,8 +68,8 @@ dependencies {
     //compile "org.jmonkeyengine:jme3-terrain:$jmonkeyengineVersion"
 
     // select one version of LWJGL (from jcenter or mavenLocal)
-    compile "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
-    //compile "org.jmonkeyengine:jme3-lwjgl3:$jmonkeyengineVersion"
+    runtime "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
+    //runtime "org.jmonkeyengine:jme3-lwjgl3:$jmonkeyengineVersion"
 
     // from stephengold's bintray repositories:
     //runtime 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
