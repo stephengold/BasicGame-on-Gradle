@@ -18,6 +18,7 @@ gradle.projectsEvaluated {
         //debug true
         enableAssertions true
         jvmArgs '-XX:+UseConcMarkSweepGC'
+        //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
     }
 }
 
@@ -43,8 +44,8 @@ repositories {
     jcenter()
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
+    //google()
     //mavenCentral()
-    // You may define additional repositories, or even remove "mavenCentral()".
     // Read more about repositories here:
     //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:repositories
 }
