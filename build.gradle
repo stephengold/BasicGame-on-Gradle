@@ -6,22 +6,21 @@ apply plugin: 'java'
 sourceCompatibility = '1.8'
 
 gradle.projectsEvaluated {
-    tasks.withType(JavaCompile) {
-        // compile-time options:
+    tasks.withType(JavaCompile) { // compile-time options:
         options.compilerArgs << '-Xdiags:verbose'
         options.compilerArgs << '-Xlint:unchecked'
         options.deprecation = true
         options.encoding = 'UTF-8'
     }
-    tasks.withType(JavaExec) {
-        // runtime options:
+    tasks.withType(JavaExec) { // runtime options:
         args = []
         classpath sourceSets.main.runtimeClasspath
         //debug true
         //doFirst { println commandLine }
         enableAssertions true
-        //jvmArgs '-verbosegc'
+        //jvmArgs '-verbose:gc'
         //jvmArgs '-Xms512m', '-Xmx512m'
+        //jvmArgs '-XX:+PrintCompilation'
         jvmArgs '-XX:+UseConcMarkSweepGC'
         //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
     }
@@ -85,9 +84,12 @@ dependencies {
 }
 
 // cleanup tasks
-clean { dependsOn 'cleanDLLs', 'cleanSOs' }
+clean { dependsOn 'cleanDLLs', 'cleanLogs', 'cleanSOs' }
 task cleanDLLs(type: Delete) {
     delete fileTree(dir: '.', include: '*.dll')
+}
+task cleanLogs(type: Delete) {
+    delete fileTree(dir: '.', include: 'hs_err_pid*.log')
 }
 task cleanSOs(type: Delete) {
     delete fileTree(dir: '.', include: '*.so')
