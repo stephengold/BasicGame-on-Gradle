@@ -1,4 +1,5 @@
 plugins {
+    id 'application'
     id 'java'
 }
 
@@ -52,8 +53,9 @@ ext.jmonkeyengineVersion = '3.2.4-stable' // from jcenter
 // Note however, that you may define your own "run" and "debug" task if you
 // prefer. In this case NetBeans will not add these tasks but you may rely on
 // your own implementation.
+mainClassName = 'mygame.Main'
 if (!hasProperty('mainClass')) {
-    ext.mainClass = 'mygame.Main'
+    ext.mainClass = mainClassName
 }
 
 repositories {
@@ -94,7 +96,7 @@ dependencies {
 }
 
 // cleanup tasks
-clean { dependsOn 'cleanDLLs', 'cleanLogs', 'cleanSOs' }
+clean.dependsOn('cleanDLLs', 'cleanLogs', 'cleanSOs')
 task cleanDLLs(type: Delete) {
     delete fileTree(dir: '.', include: '*.dll')
 }
