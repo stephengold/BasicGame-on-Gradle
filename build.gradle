@@ -23,7 +23,6 @@ gradle.projectsEvaluated {
         args = []
         classpath sourceSets.main.runtimeClasspath
         //debug true
-        //doFirst { println commandLine }
         enableAssertions true
         //jvmArgs '-verbose:gc'
         //jvmArgs '-Xbatch'
@@ -57,6 +56,7 @@ mainClassName = 'mygame.Main'
 if (!hasProperty('mainClass')) {
     ext.mainClass = mainClassName
 }
+jar.manifest.attributes('Main-Class': mainClassName)
 
 repositories {
     //mavenLocal()
