@@ -14,8 +14,9 @@ you can download it from
 
 ### Clone the BasicGame-on-Gradle repository using Git:
 
- 1. Open the Clone wizard in the IDE:
-   + Menu bar -> "Team" -> "Remote" -> "Clone..."
+ 1. Open the "Clone Repository" wizard in the IDE, either:
+     + Menu bar -> "Team" -> "Git" -> "Clone..." or
+     + Menu bar -> "Team" -> "Remote" -> "Clone..."
  2. For "Repository URL:" specify
     "https://github.com/stephengold/BasicGame-on-Gradle.git" (without the quotes).
  3. Clear the "User:" and "Password:" text boxes.
@@ -32,6 +33,6 @@ you can download it from
 
 ### Build the project
 
- 1. In the "Projects" window, right-click on
-    the "BasicGame-on-Gradle" project to select it.
+ 1. In the "Projects" window of the IDE,
+    right-click on the "BasicGame-on-Gradle" project to select it.
  2. Select "Build".
