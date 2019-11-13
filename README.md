@@ -31,8 +31,8 @@ you can download it from
 11. When the "Clone Completed" dialog appears, click on the "Open Project..."
     button.
 
-### Build the project
+### Run the project
 
  1. In the "Projects" window of the IDE,
     right-click on the "BasicGame-on-Gradle" project to select it.
- 2. Select "Build".
+ 2. Select "Run".
