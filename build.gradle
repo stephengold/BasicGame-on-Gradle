@@ -43,6 +43,7 @@ ext.jmonkeyengineVersion = '3.2.4-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jcenter
+//ext.jmonkeyengineVersion = 'v3.3.0-beta1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
 
 // NetBeans will automatically add "run" and "debug" tasks relying on the
@@ -96,9 +97,12 @@ dependencies {
 }
 
 // cleanup tasks
-clean.dependsOn('cleanDLLs', 'cleanLogs', 'cleanSOs')
+clean.dependsOn('cleanDLLs', 'cleanDyLibs', 'cleanLogs', 'cleanSOs')
 task cleanDLLs(type: Delete) {
     delete fileTree(dir: '.', include: '*.dll')
+}
+task cleanDyLibs(type: Delete) {
+    delete fileTree(dir: '.', include: '*.dylib')
 }
 task cleanLogs(type: Delete) {
     delete fileTree(dir: '.', include: 'hs_err_pid*.log')
