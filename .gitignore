@@ -3,4 +3,5 @@
 /build/
 /private/
 /*.dll
+/*.dylib
 /*.so
