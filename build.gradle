@@ -43,7 +43,6 @@ ext.jmonkeyengineVersion = '3.2.4-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jcenter
-//ext.jmonkeyengineVersion = 'v3.3.0-beta1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
 
 // NetBeans will automatically add "run" and "debug" tasks relying on the
@@ -94,6 +93,7 @@ dependencies {
 
     // from stephengold's bintray repositories:
     //runtimeOnly 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
+    //runtimeOnly 'org.jmonkeyengine:jme3-testdata:3.3.0-alpha2'
 }
 
 // cleanup tasks
