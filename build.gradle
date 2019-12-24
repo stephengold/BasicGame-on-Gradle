@@ -23,6 +23,7 @@ gradle.projectsEvaluated {
         args = []
         classpath sourceSets.main.runtimeClasspath
         //debug true
+        //doFirst { println commandLine }
         enableAssertions true
         //jvmArgs '-verbose:gc'
         //jvmArgs '-Xbatch'
