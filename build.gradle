@@ -24,7 +24,7 @@ ext.jmonkeyengineVersion = '3.2.4-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-beta1' // from jcenter
-//ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
+//ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
 gradle.projectsEvaluated {
     tasks.withType(JavaCompile) { // compile-time options:
@@ -42,8 +42,8 @@ gradle.projectsEvaluated {
         //jvmArgs '-Xbatch'
         //jvmArgs '-Xms512m', '-Xmx512m'
         //jvmArgs '-XX:+PrintCompilation'
-        jvmArgs '-XX:+UseConcMarkSweepGC'
-        //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
+        //jvmArgs '-XX:+UseConcMarkSweepGC'
+        jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
     }
 }
 
