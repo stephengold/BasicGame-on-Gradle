@@ -15,15 +15,15 @@ sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 // select one version of the Engine
-//ext.jmonkeyengineVersion = '3.1.0-stable' // from jcenter
-//ext.jmonkeyengineVersion = '3.2.0-stable' // from jcenter
-//ext.jmonkeyengineVersion = '3.2.1-stable' // from jcenter
-//ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
-//ext.jmonkeyengineVersion = '3.2.3-stable' // from jcenter
-ext.jmonkeyengineVersion = '3.2.4-stable' // from jcenter
-//ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jcenter
-//ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jcenter
-//ext.jmonkeyengineVersion = '3.3.0-beta1' // from jcenter
+//ext.jmonkeyengineVersion = '3.1.0-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.2.0-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.2.1-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.2.2-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.2.3-stable' // from jCenter
+ext.jmonkeyengineVersion = '3.2.4-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jCenter
+//ext.jmonkeyengineVersion = '3.3.0-beta1' // from jCenter
+//ext.jmonkeyengineVersion = '3.3.0-beta2' // from jCenter
 //ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
 gradle.projectsEvaluated {
@@ -87,12 +87,12 @@ dependencies {
     //implementation 'org.jmonkeyengine:jme3-niftygui:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-terrain:' + jmonkeyengineVersion
 
-    // select one version of LWJGL (from jcenter or mavenLocal)
+    // select one version of LWJGL (from jCenter or mavenLocal)
     //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jmonkeyengineVersion  // LWJGL 2.x
     runtimeOnly 'org.jmonkeyengine:jme3-lwjgl3:' + jmonkeyengineVersion // LWJGL 3.x
 
     // BasicGame doesn't use jme3-blender, jme3-jogg, or jme3-plugins
-    //  -- they are included solely to avoid warnings from AssetConfig
+    //  -- they are added solely to avoid warnings from AssetConfig
     runtimeOnly 'org.jmonkeyengine:jme3-blender:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
