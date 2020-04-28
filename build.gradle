@@ -14,16 +14,12 @@ sourceCompatibility = '1.8'
 //targetCompatibility = '1.7'
 targetCompatibility = '1.8'
 
-// select one version of the Engine
+//// select one version of the Engine
 //ext.jmonkeyengineVersion = '3.1.0-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.2.0-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.2.1-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.2.2-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.2.3-stable' // from jCenter
-ext.jmonkeyengineVersion = '3.2.4-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-beta1' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-beta2' // from jCenter
+//ext.jmonkeyengineVersion = '3.2.4-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.3.0-stable' // from jCenter
+ext.jmonkeyengineVersion = '3.3.2-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
 gradle.projectsEvaluated {
@@ -82,7 +78,6 @@ dependencies {
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:' + jmonkeyengineVersion
     implementation 'org.jmonkeyengine:jme3-desktop:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-effects:' + jmonkeyengineVersion
-    //implementation 'org.jmonkeyengine:jme3-jogl:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-networking:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-niftygui:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-terrain:' + jmonkeyengineVersion
