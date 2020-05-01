@@ -22,25 +22,24 @@ targetCompatibility = '1.8'
 ext.jmonkeyengineVersion = '3.3.2-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
-gradle.projectsEvaluated {
-    tasks.withType(JavaCompile) { // compile-time options:
-        options.compilerArgs << '-Xdiags:verbose'
-        options.compilerArgs << '-Xlint:unchecked'
-        options.deprecation = true
-        options.encoding = 'UTF-8'
-    }
-    tasks.withType(JavaExec) { // runtime options:
-        args = []
-        classpath sourceSets.main.runtimeClasspath
-        //debug true
-        enableAssertions true
-        //jvmArgs '-verbose:gc'
-        //jvmArgs '-Xbatch'
-        //jvmArgs '-Xms512m', '-Xmx512m'
-        //jvmArgs '-XX:+PrintCompilation'
-        //jvmArgs '-XX:+UseConcMarkSweepGC'
-        jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
-    }
+tasks.withType(JavaCompile) { // compile-time options:
+    options.compilerArgs << '-Xdiags:verbose'
+    options.compilerArgs << '-Xlint:unchecked'
+    options.deprecation = true
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(JavaExec) { // runtime options:
+    args = []
+    classpath sourceSets.main.runtimeClasspath
+    //debug true
+    enableAssertions true
+    //jvmArgs '-verbose:gc'
+    //jvmArgs '-Xbatch'
+    //jvmArgs '-Xms512m', '-Xmx512m'
+    //jvmArgs '-XX:+PrintCompilation'
+    //jvmArgs '-XX:+UseConcMarkSweepGC'
+    jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
 }
 
 // NetBeans will automatically add "run" and "debug" tasks relying on the
