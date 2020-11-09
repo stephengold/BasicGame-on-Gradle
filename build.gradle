@@ -71,10 +71,8 @@ dependencies {
     // You can read more about how to add dependencies here:
     //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
 
-    // from jcenter (or mavenLocal) repositories:
+    // from jCenter (or mavenLocal) repositories:
     implementation 'org.jmonkeyengine:jme3-core:' + jmonkeyengineVersion
-    //implementation 'org.jmonkeyengine:jme3-bullet:' + jmonkeyengineVersion
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:' + jmonkeyengineVersion
     implementation 'org.jmonkeyengine:jme3-desktop:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-effects:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-networking:' + jmonkeyengineVersion
@@ -85,8 +83,20 @@ dependencies {
     runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jmonkeyengineVersion  // LWJGL 2.x
     //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl3:' + jmonkeyengineVersion // LWJGL 3.x
 
+    // BasicGame doesn't use physics. If your game needs physics, select either:
+    //
+    //    1. Minie
+    //implementation 'com.github.stephengold:Minie:3.0.0'
+    // OR
+    //    2. jme3-jbullet
+    //implementation 'org.jmonkeyengine:jme3-jbullet:' + jmonkeyengineVersion
+    // OR
+    //    3. jme3-bullet + jme3-bullet-native
+    //implementation 'org.jmonkeyengine:jme3-bullet:' + jmonkeyengineVersion
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:' + jmonkeyengineVersion
+
     // BasicGame doesn't use jme3-blender, jme3-jogg, or jme3-plugins
-    //  -- they are added solely to avoid warnings from AssetConfig
+    //  -- they are included solely to avoid warnings from AssetConfig
     runtimeOnly 'org.jmonkeyengine:jme3-blender:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
