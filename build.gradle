@@ -59,6 +59,7 @@ repositories {
     //mavenLocal()
     jcenter()
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
+    //maven { url 'https://dl.bintray.com/jmonkeyengine/org.jmonkeyengine' }
     //maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
     //google()
     //mavenCentral()
@@ -100,6 +101,9 @@ dependencies {
     runtimeOnly 'org.jmonkeyengine:jme3-blender:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
+
+    // from jmonkeyengine's bintray repositories:
+    //runtimeOnly 'org.jmonkeyengine:jme3-testdata:3.3.2-stable'
 
     // from stephengold's bintray repositories:
     //runtimeOnly 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
