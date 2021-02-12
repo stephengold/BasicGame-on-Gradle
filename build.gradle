@@ -57,12 +57,12 @@ jar.manifest.attributes('Main-Class': mainClassName)
 
 repositories {
     //mavenLocal()
+    mavenCentral()
     jcenter()
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //maven { url 'https://dl.bintray.com/jmonkeyengine/org.jmonkeyengine' }
     //maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
     //google()
-    //mavenCentral()
 
     // Read more about repositories here:
     //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:repositories
