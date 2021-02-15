@@ -2,7 +2,7 @@
 
 jMonkeyEngine's prototypical `BasicGame` as a Gradle project
 
-If you want to get started using Gradle with jMonkeyEngine's IDE (or with
+If you want to get started using Gradle with jMonkeyEngine's v3.2 SDK (or with
 NetBeans 8) and don't know where to start, use this project as a template.
 
 You will need the "Gradle Support" plugin.
