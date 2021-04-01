@@ -21,6 +21,7 @@ targetCompatibility = '1.8'
 //ext.jmonkeyengineVersion = '3.3.0-stable' // from mavenCentral
 ext.jmonkeyengineVersion = '3.3.2-stable' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-alpha3' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.4.0-alpha4' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
 tasks.withType(JavaCompile) { // Java compile-time options:
