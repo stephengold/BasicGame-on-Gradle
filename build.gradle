@@ -20,8 +20,8 @@ targetCompatibility = '1.8'
 //ext.jmonkeyengineVersion = '3.2.4-stable' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.3.0-stable' // from mavenCentral
 ext.jmonkeyengineVersion = '3.3.2-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.4.0-alpha7' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
+//ext.jmonkeyengineVersion = '3.4.0-beta1' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.5.0-SNAPSHOT' // from mavenLocal
 
 tasks.withType(JavaCompile) { // Java compile-time options:
     options.compilerArgs << '-Xdiags:verbose'
@@ -59,7 +59,7 @@ jar.manifest.attributes('Main-Class': mainClassName)
 repositories {
     //mavenLocal()
     mavenCentral()
-    //jcenter()
+    maven { url 'https://jcenter.bintray.com/' }
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //google()
 
@@ -96,7 +96,7 @@ dependencies {
 
     // BasicGame doesn't use jme3-blender, jme3-jogg, or jme3-plugins
     //  -- they are included solely to avoid warnings from AssetConfig
-    runtimeOnly 'org.jmonkeyengine:jme3-blender:' + jmonkeyengineVersion
+    //runtimeOnly 'org.jmonkeyengine:jme3-blender:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
 
