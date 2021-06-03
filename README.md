@@ -5,12 +5,12 @@ jMonkeyEngine's prototypical `BasicGame` as a Gradle project
 If you want to get started using Gradle with jMonkeyEngine's v3.2 SDK (or with
 NetBeans 8) and don't know where to start, use this project as a template.
 
-You will need the "Gradle Support" plugin.
+You will need the "Gradle Support" plugin v1.4.4.
 Download and install it using the Plugins dialog in the IDE
 (Menu bar -> "Tools" -> "Plugins") before proceeding.
 If this plugin isn't shown in the IDE's "Plugins" tool,
 you can download it from
-[GitHub](https://github.com/kelemen/netbeans-gradle-project/releases).
+[GitHub](https://github.com/kelemen/netbeans-gradle-project/releases/tag/v1.4.4).
 
 ### Clone the BasicGame-on-Gradle repository using Git:
 
