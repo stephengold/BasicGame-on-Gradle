@@ -95,11 +95,15 @@ dependencies {
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
 
-    // Libraries related to the Lemur GUI and Groovy:
+    // libraries related to the Lemur GUI and Groovy:
     //implementation 'com.simsilica:lemur:1.15.0'
     //implementation 'com.simsilica:lemur-props:1.1.1'
     //implementation 'com.simsilica:lemur-proto:1.12.0'
     //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.8'
+
+    // other libraries:
+    //implementation 'com.github.stephengold:Heart:7.1.0'
+    //runtimeOnly 'org.jmonkeyengine:jme3-testdata:' + jmonkeyengineVersion
 }
 
 // cleanup tasks
