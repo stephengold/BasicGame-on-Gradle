@@ -14,14 +14,14 @@ sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 // select one version of the Engine:
-//ext.jmonkeyengineVersion = '3.1.0-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.2.3-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.2.4-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.3.0-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.3.2-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.4.0-beta4' // from mavenCentral
-ext.jmonkeyengineVersion = '3.4.0-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.5.0-SNAPSHOT' // from mavenLocal
+//ext.jme3Version = '3.1.0-stable' // from mavenCentral
+//ext.jme3Version = '3.2.3-stable' // from mavenCentral
+//ext.jme3Version = '3.2.4-stable' // from mavenCentral
+//ext.jme3Version = '3.3.0-stable' // from mavenCentral
+//ext.jme3Version = '3.3.2-stable' // from mavenCentral
+//ext.jme3Version = '3.4.0-beta4' // from mavenCentral
+ext.jme3Version = '3.4.0-stable' // from mavenCentral
+//ext.jme3Version = '3.5.0-SNAPSHOT' // from mavenLocal
 
 tasks.withType(JavaCompile) { // Java compile-time options:
     options.compilerArgs << '-Xdiags:verbose'
@@ -72,28 +72,28 @@ dependencies {
     //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
 
     // from mavenCentral (or mavenLocal) repositories:
-    implementation 'org.jmonkeyengine:jme3-core:' + jmonkeyengineVersion
-    implementation 'org.jmonkeyengine:jme3-desktop:' + jmonkeyengineVersion
-    //implementation 'org.jmonkeyengine:jme3-effects:' + jmonkeyengineVersion
-    //implementation 'org.jmonkeyengine:jme3-networking:' + jmonkeyengineVersion
-    //implementation 'org.jmonkeyengine:jme3-niftygui:' + jmonkeyengineVersion
-    //implementation 'org.jmonkeyengine:jme3-terrain:' + jmonkeyengineVersion
+    implementation 'org.jmonkeyengine:jme3-core:' + jme3Version
+    implementation 'org.jmonkeyengine:jme3-desktop:' + jme3Version
+    //implementation 'org.jmonkeyengine:jme3-effects:' + jme3Version
+    //implementation 'org.jmonkeyengine:jme3-networking:' + jme3Version
+    //implementation 'org.jmonkeyengine:jme3-niftygui:' + jme3Version
+    //implementation 'org.jmonkeyengine:jme3-terrain:' + jme3Version
 
     // select one version of LWJGL (from mavenCentral or mavenLocal)
-    runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jmonkeyengineVersion  // LWJGL 2.x
-    //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl3:' + jmonkeyengineVersion // LWJGL 3.x
+    runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jme3Version  // LWJGL 2.x
+    //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl3:' + jme3Version // LWJGL 3.x
 
     // BasicGame doesn't use physics. If your game needs physics, select either:
     //    1. Minie
     //implementation 'com.github.stephengold:Minie:4.4.0'
     // OR
     //    2. jme3-jbullet
-    //implementation 'org.jmonkeyengine:jme3-jbullet:' + jmonkeyengineVersion
+    //implementation 'org.jmonkeyengine:jme3-jbullet:' + jme3Version
 
     // BasicGame doesn't use jme3-jogg or jme3-plugins
     //  -- they are included solely to avoid warnings from AssetConfig
-    runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jmonkeyengineVersion
-    runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
+    runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jme3Version
+    runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jme3Version
 
     // libraries related to the Lemur GUI and Groovy:
     //implementation 'com.simsilica:lemur:1.15.0'
@@ -104,7 +104,7 @@ dependencies {
     // other libraries:
     //implementation 'com.github.stephengold:Heart:7.1.0'
     //implementation 'com.simsilica:sim-math:1.4.1'
-    //runtimeOnly 'org.jmonkeyengine:jme3-testdata:' + jmonkeyengineVersion
+    //runtimeOnly 'org.jmonkeyengine:jme3-testdata:' + jme3Version
 }
 
 // cleanup tasks
