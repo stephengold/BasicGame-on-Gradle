@@ -17,8 +17,8 @@ targetCompatibility = '1.8'
 //ext.jme3Version = '3.2.4-stable' // from mavenCentral
 //ext.jme3Version = '3.3.0-stable' // from mavenCentral
 //ext.jme3Version = '3.3.2-stable' // from mavenCentral
-//ext.jme3Version = '3.4.0-beta4' // from mavenCentral
 ext.jme3Version = '3.4.0-stable' // from mavenCentral
+//ext.jme3Version = '3.5.0-alpha1' // from mavenCentral
 //ext.jme3Version = '3.5.0-SNAPSHOT' // from mavenLocal
 
 tasks.withType(JavaCompile) { // Java compile-time options:
@@ -88,7 +88,7 @@ dependencies {
     //    2. jme3-jbullet
     //implementation 'org.jmonkeyengine:jme3-jbullet:' + jme3Version
 
-    // BasicGame doesn't use jme3-jogg or jme3-plugins
+    // BasicGame doesn't use jme3-jogg nor jme3-plugins
     //  -- they are included solely to avoid warnings from AssetConfig
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jme3Version
     runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jme3Version
@@ -97,7 +97,7 @@ dependencies {
     //implementation 'com.simsilica:lemur:1.15.0'
     //implementation 'com.simsilica:lemur-props:1.1.1'
     //implementation 'com.simsilica:lemur-proto:1.12.0'
-    //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.8'
+    //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.9'
 
     // other libraries:
     //implementation 'com.github.stephengold:Heart:7.1.0'
