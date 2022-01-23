@@ -8,7 +8,6 @@ description = 'prototypical JMonkeyEngine application'
 //sourceCompatibility = '1.7'
 sourceCompatibility = '1.8'
 
-//targetCompatibility = '1.7'
 targetCompatibility = '1.8'
 
 // select one version of the Engine:
