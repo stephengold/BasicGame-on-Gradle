@@ -2,8 +2,6 @@ plugins {
     id 'application'
 }
 
-description = 'prototypical JMonkeyEngine application'
-
 // select one source-code (JDK) option:
 //sourceCompatibility = JavaVersion.VERSION_1_7
 sourceCompatibility = JavaVersion.VERSION_1_8
