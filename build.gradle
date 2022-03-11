@@ -82,13 +82,13 @@ dependencies {
 
     // BasicGame doesn't use physics. If your game needs physics, select either:
     //    1. Minie
-    //implementation 'com.github.stephengold:Minie:4.6.1'
+    //implementation 'com.github.stephengold:Minie:4.7.1'
     // OR
     //    2. jme3-jbullet
     //implementation 'org.jmonkeyengine:jme3-jbullet:' + jme3Version
 
     // BasicGame doesn't use jme3-jogg nor jme3-plugins
-    //  -- they are included solely to avoid warnings from AssetConfig
+    //  -- they are included solely to avoid warnings from AssetConfig.
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jme3Version
     runtimeOnly 'org.jmonkeyengine:jme3-plugins:' + jme3Version
 
