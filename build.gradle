@@ -48,7 +48,7 @@ tasks.withType(JavaExec) { // Java runtime options:
 // "mainClass" property. You may however define the property prior executing
 // tasks by passing a "-PmainClass=<QUALIFIED_CLASS_NAME>" argument.
 //
-// Note however, that you may define your own "run" and "debug" task if you
+// Note however, that you may define your own "run" and "debug" tasks if you
 // prefer. In this case NetBeans will not add these tasks but you may rely on
 // your own implementation.
 mainClassName = 'mygame.Main'
