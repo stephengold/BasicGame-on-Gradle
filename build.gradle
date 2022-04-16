@@ -51,6 +51,7 @@ tasks.withType(JavaExec) { // Java runtime options:
 // Note however, that you may define your own "run" and "debug" tasks if you
 // prefer. In this case NetBeans will not add these tasks but you may rely on
 // your own implementation.
+
 mainClassName = 'mygame.Main'
 if (!hasProperty('mainClass')) {
     ext.mainClass = mainClassName
@@ -104,6 +105,7 @@ dependencies {
 
     // other libraries:
     //implementation 'com.github.stephengold:Heart:7.5.0'
+    //implementation 'com.github.stephengold:SkyControl:1.0.2'
     //implementation 'com.simsilica:sim-math:1.5.0'
     //runtimeOnly 'org.jmonkeyengine:jme3-testdata:' + jme3Version
 }
