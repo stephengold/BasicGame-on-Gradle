@@ -62,7 +62,6 @@ jar.manifest.attributes('Main-Class': mainClassName)
 repositories {
     //mavenLocal() // to find local SNAPSHOTs of libraries
     mavenCentral()
-    maven { url 'https://jcenter.bintray.com/' }
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //google()
 
@@ -88,7 +87,7 @@ dependencies {
 
     // BasicGame doesn't use physics. If your game needs physics, select either:
     //    1. Minie
-    //implementation 'com.github.stephengold:Minie:4.8.1'
+    //implementation 'com.github.stephengold:Minie:4.9.0'
     // OR
     //    2. jme3-jbullet
     //implementation 'org.jmonkeyengine:jme3-jbullet:' + jme3Version
