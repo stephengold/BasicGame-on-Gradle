@@ -60,7 +60,8 @@ if (!hasProperty('mainClass')) {
 jar.manifest.attributes('Main-Class': mainClassName)
 
 repositories {
-    //mavenLocal() // to find local SNAPSHOTs of libraries
+    //mavenLocal() // to find local snapshots of libraries
+    //flatDir { dirs "${rootProject.projectDir}/lib" } // to find libraries in the project's "lib" directory
     mavenCentral()
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //google()
