@@ -102,7 +102,7 @@ dependencies {
     //implementation 'com.simsilica:lemur:1.16.0'
     //implementation 'com.simsilica:lemur-props:1.2.0'
     //implementation 'com.simsilica:lemur-proto:1.13.0'
-    //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.10'
+    //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.11'
 
     // other libraries:
     //implementation 'com.github.stephengold:Heart:8.0.0'
