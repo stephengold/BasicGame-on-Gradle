@@ -105,7 +105,7 @@ dependencies {
     //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.11'
 
     // other libraries:
-    //implementation 'com.github.stephengold:Heart:8.0.0'
+    //implementation 'com.github.stephengold:Heart:8.1.0'
     //implementation 'com.github.stephengold:SkyControl:1.0.3'
     //implementation 'com.simsilica:sim-math:1.5.0'
     //runtimeOnly 'org.jmonkeyengine:jme3-testdata:' + jme3Version
