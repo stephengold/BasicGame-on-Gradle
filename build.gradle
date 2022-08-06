@@ -42,7 +42,7 @@ tasks.withType(JavaExec) { // Java runtime options:
     //jvmArgs '-Xbatch'
     //jvmArgs '-Xms256m', '-Xmx256m'
     //jvmArgs '-XX:+PrintCompilation'
-    jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
+    //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
 }
 
 // NetBeans will automatically add "run" and "debug" tasks relying on the
