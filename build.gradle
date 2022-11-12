@@ -4,12 +4,17 @@ plugins {
     id 'application'
 }
 
-// select one source-code (JDK) option:
+// select one version of Java for source code:
 sourceCompatibility = JavaVersion.VERSION_1_8
+//sourceCompatibility = JavaVersion.VERSION_11
+//sourceCompatibility = JavaVersion.VERSION_17
 
+// select one version of Java for class files:
 targetCompatibility = JavaVersion.VERSION_1_8
+//targetCompatibility = JavaVersion.VERSION_11
+//targetCompatibility = JavaVersion.VERSION_17
 
-// select one version of the Engine:
+// select one version of JMonkeyEngine:
 //ext.jme3Version = '3.1.0-stable' // from mavenCentral
 //ext.jme3Version = '3.2.4-stable' // from mavenCentral
 //ext.jme3Version = '3.3.2-stable' // from mavenCentral
