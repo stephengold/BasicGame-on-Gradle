@@ -108,7 +108,7 @@ dependencies {
     //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.13'
 
     // other libraries:
-    //implementation 'com.github.rvandoosselaer:Blocks:1.6.3'
+    //implementation 'com.github.rvandoosselaer:Blocks:1.7.1'
     //implementation 'com.github.stephengold:Heart:8.2.0'
     //implementation 'com.github.stephengold:JmePower:1.1.0'
     //implementation 'com.github.stephengold:SkyControl:1.0.3'
