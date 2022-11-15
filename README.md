@@ -2,15 +2,8 @@
 
 jMonkeyEngine's prototypical `BasicGame` as a Gradle project
 
-If you want to get started using Gradle with jMonkeyEngine's v3.2 SDK (or with
-NetBeans 8) and don't know where to start, use this project as a template.
-
-You will need the "Gradle Support" plugin v1.4.4.
-Download and install it using the Plugins dialog in the IDE
-(Menu bar -> "Tools" -> "Plugins") before proceeding.
-If this plugin isn't shown in the IDE's "Plugins" tool,
-you can download it from
-[GitHub](https://github.com/kelemen/netbeans-gradle-project/releases/tag/v1.4.4).
+If you want to get started using Gradle with jMonkeyEngine's v3.5 SDK (or with
+NetBeans 15) and don't know where to start, use this project as a template.
 
 ### Clone the BasicGame-on-Gradle repository using Git:
 
@@ -23,13 +16,19 @@ you can download it from
  4. For "Clone into:" specify a writable folder (on a local filesystem)
     that doesn't already contain "BasicGame-on-Gradle".
  5. Click on the "Next >" button.
- 6. Make sure the "master" remote branch is checked.
+ 6. Make sure the "master*" remote branch is checked.
  7. Click on the "Next >" button again.
- 8. Make sure the Checkout Branch is set to "master".
+ 8. Make sure the Checkout Branch is set to "master*".
  9. Make sure the "Scan for NetBeans Projects after Clone" box is checked.
 10. Click on the "Finish" button.
-11. When the "Clone Completed" dialog appears, click on the "Open Project..."
-    button.
+11. When the "Clone Completed" dialog appears,
+    click on the "Open Project" button.
+12. When the "Open Project" dialog reports problems,
+    click on the "Resolve Problems..." button.
+13. When the "Resolve Project Problems" dialog appears, the only problem should be "Priminng Build Required".
+    Click on the "Resolve..." button.
+14. When "This problem was resolved" appears in the dialog's text box,
+    click on the "Close" button.
 
 ### Run the project
 
