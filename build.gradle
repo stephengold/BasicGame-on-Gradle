@@ -22,6 +22,7 @@ targetCompatibility = JavaVersion.VERSION_11
 //ext.jme3Version = '3.5.0-stable' // from mavenCentral
 //ext.jme3Version = '3.5.1-stable' // from mavenCentral
 ext.jme3Version = '3.5.2-stable' // from mavenCentral
+//ext.jme3Version = '3.6.0-alpha1' // from mavenCentral
 //ext.jme3Version = '3.6.0-SNAPSHOT' // from mavenLocal
 
 tasks.withType(JavaCompile) { // Java compile-time options:
@@ -84,6 +85,7 @@ dependencies {
     //implementation 'org.jmonkeyengine:jme3-networking:' + jme3Version
     //implementation 'org.jmonkeyengine:jme3-niftygui:' + jme3Version
     //implementation 'org.jmonkeyengine:jme3-terrain:' + jme3Version
+    //runtimeOnly    'org.jmonkeyengine:jme3-awt-dialogs:' + jmeVersion // JMonkeyEngine v3.6 only!
 
     // select one version of LWJGL (from mavenCentral or mavenLocal)
     runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jme3Version  // LWJGL 2.x
