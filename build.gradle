@@ -79,8 +79,8 @@ dependencies {
     //runtimeOnly    'org.jmonkeyengine:jme3-awt-dialogs:' + jmeVersion // JMonkeyEngine v3.6 only!
 
     // select one version of LWJGL (from mavenCentral or mavenLocal)
-    runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jme3Version  // LWJGL 2.x
-    //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl3:' + jme3Version // LWJGL 3.x
+    //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jme3Version  // LWJGL 2.x
+    runtimeOnly 'org.jmonkeyengine:jme3-lwjgl3:' + jme3Version // LWJGL 3.x
 
     // BasicGame doesn't use physics. If your game needs physics, select either:
     //    1. Minie
