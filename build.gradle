@@ -67,7 +67,7 @@ repositories {
 
 dependencies {
     // You can read more about how to add dependencies here:
-    //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
+    // https://docs.gradle.org/current/userguide/dependency_management.html#declaring-dependencies
 
     // from mavenCentral (or mavenLocal) repositories:
     implementation 'org.jmonkeyengine:jme3-core:' + jme3Version
