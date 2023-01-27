@@ -47,7 +47,7 @@ tasks.withType(JavaExec) { // Java runtime options:
     enableAssertions true
     //jvmArgs '-verbose:gc'
     //jvmArgs '-Xbatch'
-    //jvmArgs '-Xms256m', '-Xmx256m'
+    //jvmArgs '-Xms256m', '-Xmx256m' // to enlarge the Java heap
     //jvmArgs '-XX:+PrintCompilation'
     //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
 }
@@ -59,7 +59,7 @@ application {
 repositories {
     //mavenLocal() // to find local SNAPSHOTs of libraries
     //flatDir { dirs "${rootProject.projectDir}/lib" } // to find libraries in the project's "lib" directory
-    //maven { url 'https://s01.oss.sonatype.org/content/groups/staging' } // to find JME libraries find but not yet released
+    //maven { url 'https://s01.oss.sonatype.org/content/groups/staging' } // to find JME libraries staged but not yet released
     mavenCentral()
     maven { url 'https://jitpack.io' } // to find the Blocks library (see below)
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
