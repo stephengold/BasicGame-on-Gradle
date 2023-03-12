@@ -61,9 +61,9 @@ configurations.all {
 repositories {
     //mavenLocal() // to find local SNAPSHOTs of libraries
     //flatDir { dirs "${rootProject.projectDir}/lib" } // to find libraries in the project's "lib" directory
-    //maven { url 'https://s01.oss.sonatype.org/content/groups/staging' } // to find JME libraries staged but not yet released
     mavenCentral()
     maven { url 'https://jitpack.io' } // to find the Blocks library (see below)
+    //maven { url 'https://s01.oss.sonatype.org/content/groups/staging' } // to find JME libraries staged but not yet released
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //google()
 
