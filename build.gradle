@@ -105,9 +105,9 @@ dependencies {
     //implementation 'com.simsilica:lemur-proto:1.13.0'
     //runtimeOnly 'org.codehaus.groovy:groovy-jsr223:3.0.16'
 
-    // other libraries:
+    // other add-on libraries:
     //implementation 'com.github.rvandoosselaer:Blocks:1.7.1'
-    //implementation 'com.github.stephengold:Heart:8.2.0'
+    //implementation 'com.github.stephengold:Heart:8.3.2'
     //implementation 'com.github.stephengold:JmePower:1.1.0'
     //implementation 'com.github.stephengold:SkyControl:1.0.3'
     //implementation 'com.simsilica:sim-math:1.6.0'
