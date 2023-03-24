@@ -20,7 +20,6 @@ targetCompatibility = JavaVersion.VERSION_1_8
 //ext.jme3Version = '3.3.2-stable' // from mavenCentral
 //ext.jme3Version = '3.4.1-stable' // from mavenCentral
 //ext.jme3Version = '3.5.2-stable' // from mavenCentral
-//ext.jme3Version = '3.6.0-beta3' // from mavenCentral
 ext.jme3Version = '3.6.0-stable' // from mavenCentral
 //ext.jme3Version = '3.7.0-SNAPSHOT' // from mavenLocal
 
@@ -62,7 +61,7 @@ repositories {
     //flatDir { dirs "${rootProject.projectDir}/lib" } // to find libraries in the project's "lib" directory
     mavenCentral()
     maven { url 'https://jitpack.io' } // to find the Blocks library (see below)
-    //maven { url 'https://s01.oss.sonatype.org/content/groups/staging' } // to find JME libraries staged but not yet released
+    //maven { url 'https://s01.oss.sonatype.org/content/groups/staging' } // to find libraries staged but not yet released
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //google()
 
