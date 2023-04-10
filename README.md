@@ -5,6 +5,9 @@ jMonkeyEngine's prototypical `BasicGame` as a Gradle project
 If you want to get started using Gradle with jMonkeyEngine's v3.5 SDK (or with
 NetBeans 15) and don't know where to start, use this project as a template.
 
+Or you could simply fill out a web form:
+[the JMonkeyEngine Initializer](https://jmonkeyengine.org/start/).
+
 ### Clone the BasicGame-on-Gradle repository using Git:
 
  1. Open the "Clone Repository" wizard in the IDE, either:
