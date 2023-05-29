@@ -106,7 +106,7 @@ dependencies {
 
     // other add-on libraries:
     //implementation 'com.github.rvandoosselaer:Blocks:1.7.1'
-    //implementation 'com.github.stephengold:Heart:8.4.0'
+    //implementation 'com.github.stephengold:Heart:8.5.0'
     //implementation 'com.github.stephengold:JmePower:1.1.1'
     //implementation 'com.github.stephengold:SkyControl:1.0.4'
     //implementation 'com.simsilica:sim-math:1.6.0'
