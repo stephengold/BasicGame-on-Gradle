@@ -63,7 +63,7 @@ repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' } // to find the Blocks library (see below)
     //maven { url 'https://s01.oss.sonatype.org/content/groups/staging' } // to find libraries staged but not yet released
-    //maven { url 'https://s01.oss.sonatype.org/content/repositories/snapshots' } // to find public SHAPSHOTs of libraries
+    //maven { url 'https://s01.oss.sonatype.org/content/repositories/snapshots' } // to find public SNAPSHOTs of libraries
     //maven { url 'http://nifty-gui.sourceforge.net/nifty-maven-repo' }
     //google()
 
