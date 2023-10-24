@@ -1,7 +1,7 @@
-// Gradle build script for the BasicGame-on-Gradle project
+// Gradle script to build the BasicGame-on-Gradle project
 
 plugins {
-    id 'application'
+    id 'application' // to build a Java application
 }
 
 java {
@@ -59,7 +59,7 @@ configurations.configureEach {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds' // to disable caching of SNAPSHOTs
 }
 repositories {
-    //mavenLocal() // to find local SNAPSHOTs of libraries
+    //mavenLocal() // to find libraries installed locally
     //flatDir { dirs "${rootProject.projectDir}/lib" } // to find libraries in the project's "lib" directory
     mavenCentral()
     maven { url 'https://jitpack.io' } // to find the Blocks library (see below)
