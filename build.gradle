@@ -83,7 +83,7 @@ dependencies {
     //implementation 'org.jmonkeyengine:jme3-networking:' + jme3Version
     //implementation 'org.jmonkeyengine:jme3-niftygui:' + jme3Version
     //implementation 'org.jmonkeyengine:jme3-terrain:' + jme3Version
-    //runtimeOnly    'org.jmonkeyengine:jme3-awt-dialogs:' + jme3Version // JMonkeyEngine v3.6 only!
+    //runtimeOnly    'org.jmonkeyengine:jme3-awt-dialogs:' + jme3Version // only for JMonkeyEngine v3.6 or later!
 
     // select one version of LWJGL (from mavenCentral or mavenLocal)
     //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jme3Version  // LWJGL 2.x
