@@ -111,7 +111,7 @@ dependencies {
     //implementation 'com.github.rvandoosselaer:Blocks:1.7.1'
     //implementation 'com.github.stephengold:Heart:8.8.0'
     //implementation 'com.github.stephengold:JmePower:1.1.1'
-    //implementation 'com.github.stephengold:SkyControl:1.0.4'
+    //implementation 'com.github.stephengold:SkyControl:1.0.5'
     //implementation 'com.simsilica:sim-math:1.6.0'
     //runtimeOnly 'org.jmonkeyengine:jme3-testdata:' + jme3Version
 }
