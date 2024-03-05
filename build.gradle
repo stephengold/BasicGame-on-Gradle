@@ -6,14 +6,12 @@ plugins {
 
 java {
     // select one version of Java for source code:
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    //sourceCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_11
     //sourceCompatibility = JavaVersion.VERSION_17
     //sourceCompatibility = JavaVersion.VERSION_21
 
     // select one version of Java for class files:
-    targetCompatibility = JavaVersion.VERSION_1_8
-    //targetCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
     //targetCompatibility = JavaVersion.VERSION_17
     //targetCompatibility = JavaVersion.VERSION_21
 }
