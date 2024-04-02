@@ -2,8 +2,8 @@
 
 jMonkeyEngine's prototypical `BasicGame` as a Gradle project
 
-If you want to get started using Gradle with jMonkeyEngine's v3.5 SDK (or with
-NetBeans 15) and don't know where to start, use this project as a template.
+If you want to get started using Gradle with jMonkeyEngine's v3.6.1 SDK (or with
+NetBeans IDE 20) and don't know where to start, use this project as a template.
 
 Or you could simply fill out a web form:
 [the JMonkeyEngine Initializer](https://jmonkeyengine.org/start/).
@@ -19,7 +19,7 @@ Or you could simply fill out a web form:
  4. For "Clone into:" specify a writable folder (on a local filesystem)
     that doesn't already contain "BasicGame-on-Gradle".
  5. Click on the "Next >" button.
- 6. Make sure the "master*" remote branch is checked.
+ 6. Make sure the "master" remote branch is checked.
  7. Click on the "Next >" button again.
  8. Make sure the Checkout Branch is set to "master*".
  9. Make sure the "Scan for NetBeans Projects after Clone" box is checked.
@@ -37,6 +37,7 @@ Or you could simply fill out a web form:
 
  1. In the "Projects" window of the IDE,
     right-click on the "BasicGame-on-Gradle" project to select it.
- 2. Select "Run".
+ 2. Select "Run" or "Run Project".
+ 3. To close the "jMonkeyEngine 3.6.1-stable" window, press the Esc key.
 
 Assets your game requires can be added to src/main/resources folder.
