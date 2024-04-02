@@ -28,7 +28,7 @@ Or you could simply fill out a web form:
     click on the "Open Project" button.
 12. When the "Open Project" dialog reports problems,
     click on the "Resolve Problems..." button.
-13. When the "Resolve Project Problems" dialog appears, the only problem should be "Priminng Build Required".
+13. When the "Resolve Project Problems" dialog appears, the only problem should be "Priming Build Required".
     Click on the "Resolve..." button.
 14. When "This problem was resolved" appears in the dialog's text box,
     click on the "Close" button.
