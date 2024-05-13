@@ -1,7 +1,7 @@
 // Gradle script to build the BasicGame-on-Gradle project
 
 plugins {
-    id 'application' // to build a Java application
+    id 'application' // to build JVM applications
 }
 
 java {
