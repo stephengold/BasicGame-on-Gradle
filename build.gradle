@@ -15,6 +15,7 @@ java {
     //targetCompatibility = JavaVersion.VERSION_17
     //targetCompatibility = JavaVersion.VERSION_21
 }
+
 // select one version of JMonkeyEngine:
 //ext.jme3Version = '3.1.0-stable' // from mavenCentral
 //ext.jme3Version = '3.2.4-stable' // from mavenCentral
@@ -74,7 +75,7 @@ dependencies {
     //runtimeOnly    'org.jmonkeyengine:jme3-awt-dialogs:' + jme3Version // only for JMonkeyEngine v3.6 or later!
 
     // select one version of LWJGL (from mavenCentral or mavenLocal)
-    //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jme3Version  // LWJGL 2.x
+    //runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jme3Version // LWJGL 2.x
     runtimeOnly 'org.jmonkeyengine:jme3-lwjgl3:' + jme3Version // LWJGL 3.x
 
     // BasicGame doesn't use physics. If your game needs physics, select either:
