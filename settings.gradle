@@ -1,6 +1,4 @@
-/*
- * settings.gradle: global settings for the BasicGame-on-Gradle project
- */
+// global settings for the BasicGame-on-Gradle project
 
 rootProject.name = 'BasicGame-on-Gradle'
 
