@@ -1,5 +1,7 @@
+## TOML version catalog for the BasicGame-on-Gradle project
+
 [versions]
-# select one version of JMonkeyEngine:
+## select one version of JMonkeyEngine:
 #jme = "3.1.0-stable"
 #jme = "3.2.4-stable"
 #jme = "3.3.2-stable"
