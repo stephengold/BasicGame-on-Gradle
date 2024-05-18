@@ -12,9 +12,9 @@ jme = "3.6.1-stable"
 #jme = "3.8.0-SNAPSHOT"
 
 [libraries]
-blocks = { module = "com.github.rvandoosselaer:Blocks", version = "1.7.1" }
-groovy-jsr223 = { module = "org.codehaus.groovy:groovy-jsr223", version = "3.0.21" }
-heart = { module = "com.github.stephengold:Heart", version = "9.0.0" }
+blocks = "com.github.rvandoosselaer:Blocks:1.7.1"
+groovy-jsr223 = "org.codehaus.groovy:groovy-jsr223:3.0.21"
+heart = "com.github.stephengold:Heart:9.0.0"
 jme3-awt-dialogs = { module = "org.jmonkeyengine:jme3-awt-dialogs", version.ref = "jme" }
 jme3-core = { module = "org.jmonkeyengine:jme3-core", version.ref = "jme" }
 jme3-desktop = { module = "org.jmonkeyengine:jme3-desktop", version.ref = "jme" }
@@ -28,12 +28,12 @@ jme3-niftygui = { module = "org.jmonkeyengine:jme3-niftygui", version.ref = "jme
 jme3-plugins = { module = "org.jmonkeyengine:jme3-plugins", version.ref = "jme" }
 jme3-terrain = { module = "org.jmonkeyengine:jme3-terrain", version.ref = "jme" }
 jme3-testdata = { module = "org.jmonkeyengine:jme3-testdata", version.ref = "jme" }
-jmePower = { module = "com.github.stephengold:JmePower", version = "1.1.1" }
-lemur = { module = "com.simsilica:lemur", version = "1.16.0" }
-lemur-props = { module = "com.simsilica:lemur-props", version = "1.2.0" }
-lemur-proto = { module = "com.simsilica:lemur-proto", version = "1.13.0" }
-minie = { module = "com.github.stephengold:Minie", version = "8.1.0" }
-sim-math = { module = "com.simsilica:sim-math", version = "1.6.0" }
-skyControl = { module = "com.github.stephengold:SkyControl", version = "1.0.5" }
+jmePower = "com.github.stephengold:JmePower:1.1.1"
+lemur = "com.simsilica:lemur:1.16.0"
+lemur-props = "com.simsilica:lemur-props:1.2.0"
+lemur-proto = "com.simsilica:lemur-proto:1.13.0"
+minie = "com.github.stephengold:Minie:8.1.0"
+sim-math = "com.simsilica:sim-math:1.6.0"
+skyControl = "com.github.stephengold:SkyControl:1.0.5"
 
 [plugins]
