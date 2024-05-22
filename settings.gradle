@@ -1,4 +1,4 @@
-// global settings for the BasicGame-on-Gradle project
+// global build settings for the BasicGame-on-Gradle project
 
 rootProject.name = 'BasicGame-on-Gradle'
 
@@ -17,3 +17,5 @@ dependencyResolutionManagement {
         //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:repositories
     }
 }
+
+// no subprojects
