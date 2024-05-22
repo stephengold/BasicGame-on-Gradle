@@ -1,6 +1,10 @@
 ## catalog of libraries and plugins used to build the BasicGame-on-Gradle project
 
+# You can read more about catalogs here:
+# https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
+
 [versions]
+
 ## select one version of JMonkeyEngine:
 #jme = "3.1.0-stable"
 #jme = "3.2.4-stable"
@@ -12,6 +16,7 @@ jme = "3.6.1-stable"
 #jme = "3.8.0-SNAPSHOT"
 
 [libraries]
+
 blocks = "com.github.rvandoosselaer:Blocks:1.7.1"
 groovy-jsr223 = "org.codehaus.groovy:groovy-jsr223:3.0.21"
 heart = "com.github.stephengold:Heart:9.0.0"
