@@ -1,7 +1,7 @@
 ## catalog of libraries and plugins used to build the BasicGame-on-Gradle project
 
-# You can read more about catalogs here:
-# https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
+## You can read more about catalogs here:
+## https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
 
