@@ -19,7 +19,7 @@ jme = "3.6.1-stable"
 
 blocks = "com.github.rvandoosselaer:Blocks:1.7.1"
 groovy-jsr223 = "org.codehaus.groovy:groovy-jsr223:3.0.21"
-heart = "com.github.stephengold:Heart:9.0.0"
+heart = "com.github.stephengold:Heart:9.1.0"
 
 ## jme3-awt-dialogs is available only for JMonkeyEngine 3.6.0 and later:
 jme3-awt-dialogs = { module = "org.jmonkeyengine:jme3-awt-dialogs", version.ref = "jme" }
