@@ -21,7 +21,7 @@ jolt-jni = "0.5.0"
 [libraries]
 
 blocks = "com.github.rvandoosselaer:Blocks:1.7.1"
-groovy-jsr223 = "org.codehaus.groovy:groovy-jsr223:3.0.22"
+groovy-jsr223 = "org.codehaus.groovy:groovy-jsr223:3.0.23"
 heart = "com.github.stephengold:Heart:9.1.0"
 
 ## jme3-awt-dialogs is available only for JMonkeyEngine 3.6.0 and later:
