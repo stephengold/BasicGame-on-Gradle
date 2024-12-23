@@ -36,7 +36,7 @@ tasks.withType(JavaExec).configureEach { // Java runtime options:
         jvmArgs '-XstartOnFirstThread'
     }
     classpath sourceSets.main.runtimeClasspath
-    enableAssertions true
+    enableAssertions = true
     //jvmArgs '-verbose:gc'
     //jvmArgs '-Xbatch'
     //jvmArgs '-Xms256m', '-Xmx256m' // to enlarge the Java heap
