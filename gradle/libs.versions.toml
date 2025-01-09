@@ -12,9 +12,9 @@
 #jme = "3.4.1-stable"
 #jme = "3.5.2-stable"
 #jme = "3.6.1-stable"
-#jme = "3.7.0-beta1.2.2"
 jme = "3.7.0-stable"
 #jme = "3.8.0-alpha1"
+#jme = "3.8.0-alpha2"
 #jme = "3.8.0-SNAPSHOT"
 
 jolt-jni = "0.5.0"
