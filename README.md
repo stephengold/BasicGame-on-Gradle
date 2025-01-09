@@ -2,8 +2,8 @@
 
 jMonkeyEngine's prototypical `BasicGame` as a Gradle/Java project
 
-If you want to get started using Gradle with jMonkeyEngine's v3.6.1 SDK (or with
-NetBeans 22 IDE) and don't know where to start, use this project as a template.
+If you want to get started using Gradle with jMonkeyEngine's v3.7.0 SDK (or with
+NetBeans 24 IDE) and don't know where to start, use this project as a template.
 
 Or you could simply fill out a web form:
 [the JMonkeyEngine Initializer](https://jmonkeyengine.org/start/).
