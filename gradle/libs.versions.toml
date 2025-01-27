@@ -17,7 +17,7 @@ jme = "3.7.0-stable"
 #jme = "3.8.0-alpha2"
 #jme = "3.8.0-SNAPSHOT"
 
-jolt-jni = "0.5.0"
+jolt-jni = "0.9.5"
 
 [libraries]
 
@@ -47,7 +47,7 @@ jolt-jni-linuxarm64 = { module = "com.github.stephengold:jolt-jni-Linux_ARM64", 
 jolt-jni-macosx64 = { module = "com.github.stephengold:jolt-jni-MacOSX64", version.ref = "jolt-jni" }
 jolt-jni-macosxarm64 = { module = "com.github.stephengold:jolt-jni-MacOSX_ARM64", version.ref = "jolt-jni" }
 jolt-jni-windows64 = { module = "com.github.stephengold:jolt-jni-Windows64", version.ref = "jolt-jni" }
-kk-physics = "com.github.stephengold:kk-physics:0.3.0"
+kk-physics = "com.github.stephengold:kk-physics:0.3.1"
 lemur = "com.simsilica:lemur:1.16.0"
 lemur-props = "com.simsilica:lemur-props:1.2.0"
 lemur-proto = "com.simsilica:lemur-proto:1.13.0"
