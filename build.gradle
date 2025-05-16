@@ -1,4 +1,4 @@
-// Gradle script to build the BasicGame-on-Gradle project
+// Gradle script to build and run the BasicGame-on-Gradle project
 
 plugins {
     id 'application' // to build JVM applications
@@ -86,7 +86,7 @@ dependencies {
     //runtimeOnly(variantOf(libs.jolt.jni.windows64){ classifier('ReleaseSp') })
 
     // BasicGame doesn't use jme3-jogg nor jme3-plugins
-    //  -- they are included solely to avoid warnings from AssetConfig.
+    //  -- they are included solely to avoid runtime warnings from AssetConfig:
     runtimeOnly(libs.jme3.jogg)
     runtimeOnly(libs.jme3.plugins)
 
