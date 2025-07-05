@@ -8,8 +8,10 @@ dependencyResolutionManagement {
         //flatDir { dirs "${rootProject.projectDir}/lib" } // to find libraries in the project's "lib" directory
         mavenCentral() // to find libraries released to the Maven Central repository
         maven { url = 'https://jitpack.io' } // to find the Blocks library
-        //maven { url = 'https://s01.oss.sonatype.org/content/groups/staging' } // to find libraries staged but not yet released
-        //maven { url = 'https://s01.oss.sonatype.org/content/repositories/snapshots' } // to find public snapshots of libraries
+        maven {
+            name = 'Central Portal Snapshots'
+            url = 'https://central.sonatype.com/repository/maven-snapshots/'
+        }
         //maven { url = 'https://nifty-gui.sourceforge.net/nifty-maven-repo' }
         //google() // to find libraries released to Google's Maven Repository
 
