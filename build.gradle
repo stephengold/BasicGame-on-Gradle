@@ -25,7 +25,7 @@ tasks.withType(JavaCompile).configureEach { // Java compile-time options:
     options.compilerArgs << '-Xlint:unchecked'
     options.deprecation = true // to provide detailed deprecation warnings
     options.encoding = 'UTF-8'
-    options.release = 11
+    options.release = 17
 }
 
 import org.gradle.nativeplatform.platform.internal.DefaultNativePlatform
