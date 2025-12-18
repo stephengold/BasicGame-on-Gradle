@@ -89,6 +89,7 @@ dependencies {
 
     // other add-on libraries:
     //implementation(libs.blocks)
+    //implementation(libs.galago2d)
     //implementation(libs.heart)
     //implementation(libs.jmePower)
     //implementation(libs.monkeywrench)
