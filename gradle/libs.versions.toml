@@ -51,7 +51,7 @@ monkeywrench = "com.github.stephengold:MonkeyWrench:1.0.0"
 particlemonkey = "com.epagagames:particlemonkey:1.1.0"
 sim-math = "com.simsilica:sim-math:1.6.0"
 skyControl = "com.github.stephengold:SkyControl:1.1.0"
-tamarin = "com.onemillionworlds:tamarin:3.0.1"
+tamarin = "com.onemillionworlds:tamarin:3.0.2"
 wes = "com.github.stephengold:Wes:0.8.2"
 
 [bundles]
