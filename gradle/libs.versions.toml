@@ -14,10 +14,9 @@
 #jme = "3.6.1-stable"
 #jme = "3.7.0-stable"
 #jme = "3.8.0-stable"
-jme = "3.8.1-stable"
-#jme = "3.9.0-alpha5"
+#jme = "3.8.1-stable"
 #jme = "3.9.0-beta1"
-#jme = "3.9.0-SNAPSHOT"
+jme = "3.9.0-stable"
 
 [libraries]
 
