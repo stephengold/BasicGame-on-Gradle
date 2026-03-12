@@ -16,7 +16,7 @@ dependencyResolutionManagement {
         //google() // to find libraries released to Google's Maven Repository
 
         // Read more about repositories here:
-        //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:repositories
+        // https://docs.gradle.org/current/userguide/declaring_repositories_basics.html#declaring-repositories-basics
     }
 }
 

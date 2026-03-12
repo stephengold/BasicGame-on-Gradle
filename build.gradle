@@ -54,7 +54,7 @@ configurations.configureEach {
 
 dependencies {
     // You can read more about how to add dependencies here:
-    // https://docs.gradle.org/current/userguide/dependency_management.html#declaring-dependencies
+    // https://docs.gradle.org/current/userguide/part3_gradle_dep_man.html
 
     // from mavenCentral (or mavenLocal) repositories:
     implementation(libs.jme3.core)
