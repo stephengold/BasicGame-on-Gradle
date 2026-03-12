@@ -2,6 +2,8 @@
 
 jMonkeyEngine's prototypical `BasicGame` as a Gradle/Java project
 
+<img height="150" src="https://raw.githubusercontent.com/stephengold/BasicGame-on-Gradle/refs/heads/master/screenshot.png" alt="BasicGame screenshot">
+
 If you want to get started using Gradle with jMonkeyEngine's v3.8.0 SDK (or with
 the NetBeans 25 IDE) and don't know where to start, use this project as a template.
 
