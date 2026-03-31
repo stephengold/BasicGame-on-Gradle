@@ -64,6 +64,7 @@ dependencies {
     //implementation(libs.jme3.niftygui)
     //implementation(libs.jme3.terrain)
     //runtimeOnly(libs.jme3.awt.dialogs) // only for JMonkeyEngine v3.6 or later!
+    //runtimeOnly(libs.jme3.saferallocator) // only for JMonkeyEngine v3.10.0 or later!
 
     // select one version of LWJGL (from mavenCentral or mavenLocal)
     //runtimeOnly(libs.jme3.lwjgl) // LWJGL 2.x
