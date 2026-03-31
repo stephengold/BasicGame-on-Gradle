@@ -89,6 +89,7 @@ dependencies {
     //runtimeOnly(libs.groovy.jsr223)
 
     // other add-on libraries:
+    //implementation(libs.acorus)
     //implementation(libs.blocks)
     //implementation(libs.galago2d)
     //implementation(libs.heart)
