@@ -6,7 +6,7 @@ jMonkeyEngine's prototypical `BasicGame` as a Gradle/Java project
 
 If you want to get started using Gradle with
 [jMonkeyEngine's v3.8.1 SDK](https://github.com/jMonkeyEngine/sdk/releases/tag/v3.8.1-stable-sdk1)
-(or with [the NetBeans 28 IDE]()https://netbeans.apache.org/front/main/download/nb28/)
+(or with [the NetBeans 28 IDE](https://netbeans.apache.org/front/main/download/nb28/))
 and don't know where to start, use this project as a template.
 
 Or you could simply fill out a web form:
