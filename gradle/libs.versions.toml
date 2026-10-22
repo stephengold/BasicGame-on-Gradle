@@ -45,7 +45,7 @@ jme3-saferallocator = { module = "org.jmonkeyengine:jme3-saferallocator", versio
 jme3-terrain = { module = "org.jmonkeyengine:jme3-terrain", version.ref = "jme" }
 jme3-testdata = { module = "org.jmonkeyengine:jme3-testdata", version.ref = "jme" }
 
-jmePower = "com.github.stephengold:JmePower:1.1.1"
+jmePower = "com.github.stephengold:JmePower:1.1.2"
 lemur = "com.simsilica:lemur:1.16.0"
 lemur-props = "com.simsilica:lemur-props:1.2.0"
 lemur-proto = "com.simsilica:lemur-proto:1.13.0"
